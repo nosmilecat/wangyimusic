@@ -1,0 +1,595 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>百度云音乐</title>
+
+
+    <link href='css/feature.presenter.1.5.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/feature.presenter.1.5.min.js"></script>
+    <script src="jquery-1.12.4.min.js"></script>
+
+
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+
+<body>
+
+<audio id="myAudio">
+    <source src="xu.mp3" type="audio/mp3">
+    <!--<source src="/statics/demosource/horse.mp3" type="audio/mpeg">-->
+
+</audio>
+
+<!--头部 -->
+
+<div class="top">
+<div class="top-nav">
+    <div class="logo fl">
+        <h1>
+            <a href="javascript:;" title="网易云音乐">网易云音乐</a>
+        </h1>
+    </div>
+    <ul class="fl">
+        <li>
+            <a href="javascript:;">
+                <span>发现音乐</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <span>我的音乐</span>
+            </a>
+        </li>
+        <li class="lis"></li>
+        <li>
+            <a  class="a1" target="_blank" href="彭文武/index.html">
+                <span class="span1">朋友</span>
+            </a>
+        </li>
+        <li class="lis"></li>
+        <li>
+            <a target="_blank" href="../网易云音乐商城/index.html">
+                <span>商城</span>
+            </a>
+        </li>
+        <li class="lis"></li>
+        <li>
+            <a href="javascript:;">
+                <span>音乐人</span>
+            </a>
+        </li>
+        <li class="lis"></li>
+        <li>
+            <a  target="_blank" href="石慧杰/download.html">
+                <span>下载客户端</span>
+            </a>
+            <i class="hot"></i>
+        </li>
+    </ul>
+    <div class="search fr">
+        <div class="search-ipt fl">
+            <input class="fl" type="text" value="
+呵呵哒"/>
+        </div>
+        <a href="javascript:;">登录</a>
+        <i>
+            <div class="search-denglu">
+                <div></div>
+                <ul>
+                    <li><s></s><a href="javascript:;">微信登陆</a></li>
+                    <li><s></s><a href="javascript:;">QQ登陆</a></li>
+                    <li><s></s><a href="javascript:;">手机号登陆</a></li>
+                    <li><s></s><a href="javascript:;">新浪微博登陆</a></li>
+                    <li><s></s><a href="javascript:;">网易邮箱账号登陆</a></li>
+                </ul>
+            </div>
+        </i>
+
+    </div>
+</div>
+</div>
+
+
+<!--中间部分-->
+<div class="main-middle">
+
+    <div class="middle-left"></div>
+    <div class="middle-center">
+        <div class="center_stars">
+            <img src="images/music.png" alt="" class="CD">
+
+            <!--图片轮播图层-->
+            <div id="test-element"></div>
+
+        </div>
+
+        <div class="stars-info">
+
+            <div class="stars-info-inner">
+
+
+                <div class="single-member effect-3">
+                    <div class="member-image">
+                        <img src="images/member_270x210.png" alt="Member">
+                    </div>
+                    <div class="member-info">
+                        <h3>关注明星 发现精彩</h3>
+
+                        <p>你可以关注明星和好友品味他们的私房歌单
+                            通过他们的动态发现更多精彩音乐</p>
+
+                        <div class="social-touch">
+                            <button id="login_now">立即登录</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <div class="middle-right "></div>
+
+</div>
+
+
+<!--底部-->
+
+<div class="main_bottom">
+    <div class="bottom_info">
+        <div class="left_info">
+
+            <div class="left_info-icon">
+
+            </div>
+            <p class="text_info">
+                <strong>独立音乐人招募计划</strong><br/>
+                <span class="p_gray">加入我们即将与超过亿万歌迷互动</span>
+            </p>
+
+
+        </div>
+        <div class="center_info">
+
+            <div class="center_info-icon">
+
+            </div>
+
+            <p class="text_info">
+                <strong>音乐专栏招募计划</strong><br/>
+                <span class="p_gray">加入我们与同道中人交流心得</span>
+            </p>
+
+
+        </div>
+        <div class="right_info2">
+
+
+            <div class="right_info-icon">
+
+            </div>
+
+            <p class="text_info">
+                <strong> 关于网易-客户服务-网站导航 网易公司版权所有</strong><br/>
+                <span class="p_gray"> 杭州乐读科技有限公司运营</span> 浙网文[2015]-0415号 <span class="pen"></span> 意见反馈
+            </p>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<div class="music_bar">
+    <i class="iconfont  text_shadow  font_icon1">&#xe600;</i>
+    <i id="play" class="iconfont  text_shadow  font_icon2">&#xe612;</i>
+    <i id="pause" class="iconfont  text_shadow  font_icon4">&#xe665;</i>
+    <i class="iconfont  text_shadow  font_icon3">&#xe658;</i>
+    <i id="quiet" class="iconfont  text_shadow  font_icon4">&#xe602;</i>
+
+
+
+    <div class="step_bar">
+
+    </div>
+
+    <i id="time-dot" class="iconfont  text_shadow  font_icon10">&#xe648;</i>
+    <i id ="louder" class="iconfont  text_shadow  font_icon5">&#xe67f;</i>
+    <i class="iconfont  text_shadow  font_icon6">&#xe632;</i>
+    <i class="iconfont  text_shadow  font_icon7">&#xe65e;</i>
+    <i class="iconfont  text_shadow  font_icon8">&#xe601;</i>
+    <i class="iconfont  text_shadow  font_icon9">&#xe61d;</i>
+
+
+</div>
+
+
+<div class="login_box">
+    <div class="login_inner-top">
+        <div class="top_span">
+
+            <span class="span_login">登录</span>
+            <span class="span_exit">X</span>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="login_inner-bottom">
+
+        <div class="login_content">
+
+            <div class="login_content-left">
+                <div class="login_left-pic">
+
+                </div>
+
+                <div class="login_left-button">
+                    <button id="btn_mobile">手机号登录</button>
+
+                    <button id="btn_sign">注 册</button>
+
+                </div>
+
+
+            </div>
+
+            <div class="login_content-right">
+
+                <ul class="ul-login">
+                    <li class="login_li"><span class="icon_span icon1"></span><span>微信登录</span></li>
+                    <li class="login_li"><span class="icon_span icon2"></span><span>QQ登录</span></li>
+                    <li class="login_li"><span class="icon_span icon3"></span><span>微博登录</span></li>
+                    <li class="login_li"><span class="icon_span icon4"></span><span>网易邮箱账号登录</span></li>
+
+
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<div class="mobile_login-box">
+    <div class="mob_log-top">
+        <div class="mob_topSpan">
+            <span class="mob_leftSpan">手机号登录</span>
+            <span class="mob_rightClose">X</span>
+        </div>
+
+    </div>
+
+    <div class="mob_log-middle">
+        <div class="input_content">
+
+            <input type="text" id="ipt_name">
+
+            <input type="text" id="ipt_pwd">
+
+            <div class="div_checkbox">
+                <input type="checkbox" name="" id="checkbox">
+                <span class="span_auto">自动登录</span>
+                <span class="span_forget">忘记密码</span>
+            </div>
+
+            <button id="blueBtn">登 录</button>
+
+        </div>
+
+    </div>
+
+    <div class="mob_login-bottom">
+
+        <div class="bottom_info">
+            <span class="left_other"> <a>其他登录方式</a> </span>
+
+            <span class="right_info">没有账号，免费注册</span>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<script>
+    $(document).ready(function () {
+
+
+
+
+        //用户登录窗口打开关闭
+
+        $("#login_now").click(function () {
+//                $(".login_box").css("display", "block");
+
+            $(".login_box").slideDown(1000);
+            x.muted = true; //静音
+
+            $("#louder").css("color","white");
+             $("#louder").show();
+
+
+        });
+
+        $(".span_exit").click(function () {
+//                $(".login_box").css("display", "none");
+            $(".login_box").slideUp(200);
+
+
+        })
+
+        //手机注册窗口 打开关闭
+        $("#btn_mobile").click(function () {
+            $(".mobile_login-box").css("display", "block");
+            $(".login_box").css("display", "none");
+
+        })
+
+        $(".mob_rightClose").click(function () {
+            $(".mobile_login-box").css("display", "none");
+
+        })
+
+
+        //第一个登录框拖拽
+
+        var top_span = $(".login_inner-top");
+
+
+        //1 点住的时候获取鼠标在盒子内的位置
+        top_span[0].onmousedown = function (e) {
+            var e = e || window.event;
+            var x = e.clientX - $(".login_box")[0].offsetLeft;
+            var y = e.clientY - $(".login_box")[0].offsetTop;
+//
+            //2 让盒子跟随鼠标
+            document.onmousemove = function (e) {
+                var e = e || window.event;
+                $(".login_box").css("left", e.clientX - x + "px")
+                $(".login_box").css("top", e.clientY - y + "px")
+
+            };
+        };
+
+        top_span[0].onmouseup = function () {
+            document.onmousemove = null;
+
+        }
+
+
+//        //第二个登录框拖拽
+        $(".mob_log-top")[0].onmousedown = function (e) {
+
+
+            var e = e || window.event;
+            var x = e.clientX - $(".mobile_login-box")[0].offsetLeft;
+
+
+
+            var y = e.clientY - $(".mobile_login-box")[0].offsetTop;
+
+            document.onmousemove = function () {
+                var e = e || window.event;
+                $(".mobile_login-box").css("left", e.clientX - x + "px")
+                $(".mobile_login-box").css("top", e.clientY - y + "px")
+            }
+        }
+        $(".mob_log-top")[0].onmouseup = function () {
+            document.onmousemove = null;
+        }
+//
+        var timer = null;
+
+        var musics = null;
+
+        timer = setInterval(function () {
+
+            var date = new Date();
+            var sec = date.getSeconds() + date.getMilliseconds() / 1000;
+            $(".CD").css("transform", "rotate(" + sec * 30 + "deg)")
+
+
+        }, 17);
+
+
+//            登录框返回
+        console.log($(".left_other a"));
+
+
+        $(".left_other a").click(function () {
+
+
+            $(".mobile_login-box").css("display", "none");
+
+            $(".login_box").slideDown(1000);
+
+            $(".main-middle").hidden;
+
+
+        })
+
+
+        //CD播放
+
+        var x = document.getElementById("myAudio");
+
+        function playAudio()
+        {
+            x.play();
+        }
+
+        function pauseAudio()
+        {
+            x.pause();
+        }
+
+
+        var flag=true;
+
+        $("#play").click(function () {
+
+            if(flag){
+                $(this).text($("#pause").text());
+                $("#quiet").css("color","white");
+
+
+                this.timer = setInterval(function () {
+                    var date = new Date();
+                    var sec = date.getSeconds() + date.getMilliseconds() / 1000;
+
+
+                   $("#time-dot").css("left", 420+sec *3 +"px");
+
+                }, 17);
+
+                playAudio();
+
+                flag=false;
+            }
+
+            else{
+
+                $(this)[0].innerHTML="&#xe612;";
+                pauseAudio();
+                clearInterval(this.timer);
+
+                $("#quiet").css("color","gray");
+                flag=true;
+            }
+        })
+
+
+        //旋转CD 移入事件，暂停音乐
+        $(".CD").mouseenter(function () {
+            clearInterval(timer);
+            pauseAudio();
+        });
+
+        //旋转CD 移出事件，播放音乐
+        $(".CD").mouseleave(function () {
+            this.timer = setInterval(function () {
+                var date = new Date();
+                var sec = date.getSeconds() + date.getMilliseconds() / 1000;
+                $(".CD").css("transform", "rotate(" + sec * 30 + "deg)");
+
+            }, 17);
+
+
+            $(window).css("cursor","default");
+//
+            playAudio();
+
+            $("#play").text($("#pause").text());
+            flag=false;
+
+
+        })
+
+
+
+
+        //静音
+            $("#quiet").click(function () {
+                 x.muted = true;
+                console.log(1);//静音
+                $(this).css("color","gray");
+//                $("#louder").css("color","white");
+                $("this").hide();
+                $("#louder").show();
+
+
+
+
+            })
+
+        //高音
+              $("#louder").click(function () {
+
+                  x.muted =false;
+
+                  $(this).css("color","gray");
+//                  $("#quiet").css("color","white");
+                  $(this).hide();
+                  $("#quiet").show();
+
+              })
+
+
+
+
+
+
+
+
+
+
+        });
+
+
+</script>
+
+
+
+</body>
+</html>
+
+<script>
+
+
+    /* 图片地址可以是相对路径或绝对路径；标题和描述可以包含HTML */
+    var settings =
+        [
+            {image: 'images/zzsc1.png', heading: '校园歌手', description: 'www.music.com'},
+            {image: 'images/zzsc2.png', heading: '杰克逊', description: 'www.music.com'},
+            {image: 'images/zzsc3.png', heading: '张学友', description: 'www.music.com'},
+            {image: 'images/zzsc4.png', heading: '汪 峰', description: 'www.music.com'},
+            {image: 'images/zzsc5.png', heading: 'Jackson', description: 'www.music.com'},
+            {image: 'images/zzsc6.png', heading: 'Carey', description: 'www.music.com'}
+        ];
+
+    var options = {
+
+
+        circle_radius: 150,
+        normal_feature_size: 70,
+        highlighted_feature_size: 120,
+        top_margin: 100,
+        bottom_margin: 50,
+        spacing: 20,
+        min_padding: -30,
+        heading_font_size: 20,
+        description_font_size: 12,
+
+        animation_mode: _0xc5a2[0],
+        type: 'image',
+
+    };
+
+    var fp = new FeaturePresenter($("#test-element"), settings, options);
+    fp.createPresenter();
+
+
+</script>
+
+

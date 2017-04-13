@@ -1,0 +1,79 @@
+/*css初始化 B */
+/*清除浏览器默认的margin和padding*/
+body, html, p, h1, h2, h3, ul, li, ol, dt, dd, button, input {
+    margin: 0;
+    padding: 0;
+}
+/*去掉其它默认样式*/
+h1,h2,h3 {
+    font-weight: 400;
+}
+ul , li {
+    list-style: none;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+a:hover {
+    color: #666;
+
+
+}
+body {
+    background-color: #fff;
+    color: #666;
+    font: 12px/1.5 Microsoft YaHei,tahoma,arial,Hiragino Sans GB,\\5b8b\4f53,sans-serif;
+}
+input ,button,img {
+    border: none;
+}
+img {
+    vertical-align: middle;
+}
+b , s {
+    font-weight: 400;
+    text-decoration: none;
+}
+/*浮动*/
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clearfix:after {
+    content: '';
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+/*css初始化 E */
+.w {
+    width: 982px;
+    margin: 0 auto;
+}
+.color-red {
+    color: red;
+}
+.margin-top40 {
+    margin-top: 40px;
+}
+.margin-top-60 {
+    margin-top: -60px;
+}
+.color-black {
+    color: black;
+}
+.fz12 {
+    font-size: 12px;
+}
+.margin-left15 {
+    margin-left: 15px;
+}
+.padding-left85 {
+    padding-left: 85px;
+}
